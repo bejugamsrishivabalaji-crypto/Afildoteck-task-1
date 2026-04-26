@@ -4,8 +4,8 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 ## 🌐 Live Links
 
-- **Live Website:** [Click Here](#)
-- **Documentation:** [Click Here](#)
+- **Live Website:** https://afildoteck-task-1.vercel.app/
+- **Documentation:** https://docs.google.com/document/d/1GLyCmPpvL30M-1pOcNu02jHiSPakXte6dEnCXp_r1lE/edit?usp=sharing
 
 > *Replace the links above with your actual live link and documentation link*
 
