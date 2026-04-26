@@ -1,0 +1,134 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(0,150,255,0.25), transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(0,150,255,0.15), transparent 40%),
+              linear-gradient(135deg, #1c1f26, #111317);
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* Layout */
+section {
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+/* Glass UI */
+.glass {
+  background: rgba(30, 34, 45, 0.75);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(20,20,25,0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding-top: 110px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 20px rgba(0,150,255,0.5);
+  margin-bottom: 20px;
+  animation: floatIn 1s ease;
+}
+
+/* Typography */
+h1, h2 {
+  color: white;
+}
+
+p {
+  color: #cbd5e1;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 15px rgba(0,150,255,0.4);
+}
+
+.btn-outline-light {
+  border-radius: 25px;
+}
+
+/* Skills */
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.progress {
+  height: 6px;
+  background: #2a2f3a;
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+
+/* Cards */
+.card {
+  background: rgba(30,34,45,0.85);
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,150,255,0.3);
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image animation */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
